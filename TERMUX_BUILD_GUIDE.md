@@ -169,7 +169,7 @@ adb logcat > logs.txt &
 - [ ] Search bar is functional
 - [ ] No crashes in logcat
 
-## 🆘 Troubleshooting
+## 🚨 Troubleshooting
 
 ### "gradlew: command not found"
 ```bash
