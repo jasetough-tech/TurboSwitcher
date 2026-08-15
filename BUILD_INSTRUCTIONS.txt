@@ -1,0 +1,38 @@
+=============================================================================
+     TURBOSWITCHER - BUILD INSTRUCTIONS FOR OPPO A5X (TERMUX)
+=============================================================================
+
+QUICK START (Copy & Paste):
+
+1. INSTALL TERMUX (F-Droid version):
+   - Download: f-droid.org/packages/com.termux/
+   - Install on your Oppo A5x
+
+2. OPEN TERMUX AND RUN:
+   pkg update && pkg upgrade -y
+   pkg install git openjdk-17 -y
+   mkdir -p ~/projects && cd ~/projects
+   git clone https://github.com/jasetough-tech/TurboSwitcher.git
+   cd TurboSwitcher
+   git checkout feature/turboswitcher-app
+   chmod +x gradlew
+   ./gradlew assembleDebug
+
+3. WAIT 15-30 MINUTES (first time longer due to downloads)
+
+4. INSTALL APK:
+   adb install app/build/outputs/apk/debug/app-debug.apk
+   
+   OR manually:
+   cp app/build/outputs/apk/debug/app-debug.apk ~/storage/downloads/
+   Then open via Files app
+
+5. LAUNCH APP:
+   - Open TurboSwitcher from app drawer
+   - Tap "Start Overlay"
+   - Grant permissions when prompted
+   - See floating purple bubble on screen!
+
+=============================================================================
+DETAILED GUIDE: See TERMUX_BUILD_GUIDE.md
+=============================================================================
